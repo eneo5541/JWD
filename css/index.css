@@ -50,6 +50,10 @@
         font-size: 12px;
         line-height: 22px;
         margin-bottom: 28px; }
+        .subscription-widget .tab-list .tabs-panel .button .fa-chevron-right {
+          float: right;
+          font-size: 16px;
+          line-height: 22px; }
       .subscription-widget .tab-list .tabs-panel input[type="text"] {
         height: 44px;
         background-color: #ffefdd;
