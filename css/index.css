@@ -38,7 +38,8 @@
           border-bottom: 5px solid #254b80;
           color: #254b80; }
     .subscription-widget .tab-list .tabs-panel {
-      padding: 32px 76px; }
+      padding: 32px 76px;
+      min-height: 210px; }
       .subscription-widget .tab-list .tabs-panel .button {
         height: 44px;
         width: 100%;
@@ -54,7 +55,7 @@
           float: right;
           font-size: 16px;
           line-height: 22px; }
-      .subscription-widget .tab-list .tabs-panel input[type="text"] {
+      .subscription-widget .tab-list .tabs-panel input[type="text"], .subscription-widget .tab-list .tabs-panel input[type="email"] {
         height: 44px;
         background-color: #ffefdd;
         border: 1px solid #ffddb9;
@@ -69,5 +70,7 @@
         .subscription-widget .tab-list .tabs-panel .description a {
           color: black;
           text-decoration: underline; }
+      .subscription-widget .tab-list .tabs-panel#success .description {
+        padding-top: 60px; }
 
 /*# sourceMappingURL=index.css.map */

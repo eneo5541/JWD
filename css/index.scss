@@ -55,6 +55,7 @@
 
 		.tabs-panel {
 			padding: 32px 76px;
+			min-height: 210px;
 			.button {
 				height: 44px;
 				width: 100%;
@@ -72,7 +73,7 @@
 					line-height: 22px;
 				}
 			}
-			input[type="text"] {
+			input[type="text"], input[type="email"] {
 				height: 44px;
 				background-color: #ffefdd;
 				border: 1px solid #ffddb9;
@@ -93,6 +94,11 @@
                 	color: black;
                 	text-decoration: underline;
                 }
+			}
+			&#success {
+				.description {
+					padding-top: 60px;
+				}
 			}
 		}
 	}

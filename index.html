@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 
-	<script src="js/index.js"></script>
+	<script src="index.min.js"></script>
 </head>
 <body class="subscription-widget">
 <div class="row">
@@ -25,17 +25,20 @@
 			<li class="tabs-title is-active"><a href="#signup" aria-selected="true">I'm not a member yet</a></li>
 		</ul>
 		<div class="tabs-content" data-tabs-content="subscription-options">
-			<div class="tabs-panel is-active" id="login">
+			<form class="tabs-panel is-active" id="login" onsubmit="javascript:submitForm(login);">
 				<div class="row collapse">
 					<div class="small-12 medium-5 columns">
-						<input type="text" class="email-input" placeholder="Enter your email address">
+						<input type="email" class="email-input" placeholder="Enter your email address">
 					</div>
 					<div class="small-12 medium-4 columns">
 
 						<input type="text" class="username-input" placeholder="Enter your username">
 					</div>
 					<div class="small-12 medium-3 columns">
-						<a href="#" class="button login-button" role="button">Claim your points<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						<button type="submit" class="button login-button" role="button">
+							Claim your points
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</a>
 					</div>
 				</div>
 				<div class="row">
@@ -43,20 +46,30 @@
 						<p>Enter the email address and username of your account and we'll credit you with 500 points.</p>
 					</div>
 				</div>
-			</div>
-			<div class="tabs-panel" id="signup">
+			</form>
+			<form class="tabs-panel" id="signup" onsubmit="javascript:submitForm(signup);">
 				<div class="row collapse">
 					<div class="small-12 medium-8 columns">
-						<input type="text" class="email-input" placeholder="Enter your email address">
+						<input type="email" class="email-input" placeholder="Enter your email address">
 					</div>
 					<div class="small-12 medium-4 columns">
-						<a href="#" class="button submit-button" role="button">Submit<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						<button type="submit" class="button submit-button" role="button">
+							Submit
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</button>
 					</div>
 				</div>
 				<div class="row">
 					<div class="small-12 small-centered columns description">
 						<p>To claim your 500 Reward Points, simply <a href="#" title="Join here">join here</a>.<br />
 						Takes less than 2 minutes.</p>
+					</div>
+				</div>
+			</form>
+			<div class="tabs-panel" id="success">
+				<div class="row collapse">
+					<div class="small-12 small-centered columns description">
+						<p>Thanks. You'll see your points in your account within 5 working days.</p>
 					</div>
 				</div>
 			</div>
