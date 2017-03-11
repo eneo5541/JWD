@@ -1,0 +1,69 @@
+.subscription-widget {
+  font-family: 'Open Sans', sans-serif !important;
+  background-image: url("../assets/images/bg.png");
+  background-repeat: repeat; }
+  .subscription-widget .small-centered {
+    text-align: center; }
+  .subscription-widget .header {
+    color: white;
+    font-size: 20px;
+    padding-top: 40px; }
+    .subscription-widget .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      font-family: 'Open Sans', sans-serif !important;
+      margin-bottom: 6px; }
+    .subscription-widget .header h4 {
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif !important;
+      margin-bottom: 38px; }
+  .subscription-widget .footer {
+    color: white;
+    font-size: 14px;
+    padding-top: 18px; }
+    .subscription-widget .footer .terms-conditions-link {
+      color: white;
+      text-decoration: underline; }
+  .subscription-widget .tab-list {
+    max-width: 860px; }
+    .subscription-widget .tab-list .tabs-title {
+      width: 50%; }
+      .subscription-widget .tab-list .tabs-title:first-of-type {
+        border-right: 1px solid #e6e6e6; }
+      .subscription-widget .tab-list .tabs-title a {
+        background: none;
+        color: #222222;
+        font-size: 18px; }
+        .subscription-widget .tab-list .tabs-title a[aria-selected='true'] {
+          border-bottom: 5px solid #254b80;
+          color: #254b80; }
+    .subscription-widget .tab-list .tabs-panel {
+      padding: 32px 76px; }
+      .subscription-widget .tab-list .tabs-panel .button {
+        height: 44px;
+        width: 100%;
+        background-color: #ff992c;
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 28px; }
+      .subscription-widget .tab-list .tabs-panel input[type="text"] {
+        height: 44px;
+        background-color: #ffefdd;
+        border: 1px solid #ffddb9;
+        width: 100%; }
+      .subscription-widget .tab-list .tabs-panel .collapse > .columns {
+        padding-right: 15px; }
+        .subscription-widget .tab-list .tabs-panel .collapse > .columns:last-of-type {
+          padding-right: 0px; }
+      .subscription-widget .tab-list .tabs-panel .description {
+        font-size: 18px;
+        font-weight: 600; }
+        .subscription-widget .tab-list .tabs-panel .description a {
+          color: black;
+          text-decoration: underline; }
+
+/*# sourceMappingURL=index.css.map */
