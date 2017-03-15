@@ -38,8 +38,11 @@
           border-bottom: 5px solid #254b80;
           color: #254b80; }
     .subscription-widget .tab-list .tabs-panel {
-      padding: 32px 76px;
-      min-height: 210px; }
+      min-height: 210px;
+      padding: 32px 76px; }
+      @media only screen and (max-width: 640px) {
+        .subscription-widget .tab-list .tabs-panel {
+          padding: 32px 16px; } }
       .subscription-widget .tab-list .tabs-panel .button {
         height: 44px;
         width: 100%;
@@ -62,6 +65,9 @@
         width: 100%; }
       .subscription-widget .tab-list .tabs-panel .collapse > .columns {
         padding-right: 15px; }
+        @media only screen and (max-width: 640px) {
+          .subscription-widget .tab-list .tabs-panel .collapse > .columns {
+            padding-right: 0px; } }
         .subscription-widget .tab-list .tabs-panel .collapse > .columns:last-of-type {
           padding-right: 0px; }
       .subscription-widget .tab-list .tabs-panel .description {

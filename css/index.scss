@@ -1,3 +1,6 @@
+$small-breakpoint: 640px !default;
+$small-screen-only: "only screen and (max-width: #{$small-breakpoint})" !default;
+
 .subscription-widget {
 
 	font-family: 'Open Sans', sans-serif !important;
@@ -54,8 +57,11 @@
 		}
 
 		.tabs-panel {
-			padding: 32px 76px;
 			min-height: 210px;
+			padding: 32px 76px;
+			@media #{$small-screen-only} {
+				padding: 32px 16px;
+			}
 			.button {
 				height: 44px;
 				width: 100%;
@@ -82,6 +88,9 @@
 			.collapse {
 				>.columns {
 					padding-right: 15px;
+					@media #{$small-screen-only} {
+						padding-right: 0px;
+					}
 					&:last-of-type {
 						padding-right: 0px;
 					}
